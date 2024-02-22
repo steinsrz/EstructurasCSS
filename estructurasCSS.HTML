@@ -4,7 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estructuras CSS</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Agrega un archivo CSS si lo necesitas -->
+    <!--<link rel="stylesheet" href="styles.css">Agrega un archivo CSS si lo necesitas -->
+    <style>
+        body{
+         background: hsl(0, 77%, 24%);   
+         margin: 0;
+         padding: 0;
+         color: lightpink;
+         text-align: center;
+         font-size: 16px;
+         box-sizing: border-box;
+        }
+        nav{background: rgb(189, 61, 61); 
+        padding: 1em;;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 600px;
+        }
+
+
+        header, section, footer {
+            height: 200px;
+        }
+        header{
+        background: rgb(220, 52, 52);
+        padding: 1em;;
+        }
+        section{
+        background: rgb(185, 32, 32);
+        padding: 1em;;
+        }
+        footer{
+        background: rgb(99, 8, 8);
+        padding: 1em;
+        position: fixed;
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+    
+        }
+    </style>
 </head>
 <body>
 
@@ -36,5 +77,6 @@
     <footer>
         <p>Pie de página - Información de contacto, derechos de autor, etc.</p>
     </footer>
+
 </body>
 </html>
