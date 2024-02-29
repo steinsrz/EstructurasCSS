@@ -39,21 +39,24 @@
         @media screen and (min-width: 600px){
             /*aquí inician los estilos de tblet*/
         nav{
-            float: left;
+            display: inline-block;
             width: 20%;
             height: 600px;
+            vertical-align: top;
+        }  
+        main > section{
+        display: inline-block;
+        width: 74%;
+        vertical-align: top;
         }
         header, .seccion, footer {
             height: 200px;
-        }
-        footer{
-            clear: left;
         }
         /*aquí terminan los estilos de tablet*/
         }
         @media screen and (min-width: 1024px){
             /*aquí inician los estilos de desktop*/
-            nav{
+        nav{
         background: rgb(107, 15, 157); 
         }
         header{
@@ -64,6 +67,9 @@
         }
         footer{
         background: rgb(162, 53, 241);
+        }
+        main > section{
+        width: 76.4%;
         }
         /*aquí terminan los estilos de desktop*/
         }
