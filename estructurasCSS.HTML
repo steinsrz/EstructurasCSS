@@ -15,38 +15,57 @@
          font-size: 16px;
          box-sizing: border-box;
         }
-        nav{background: rgb(189, 61, 61); 
-        padding: 1em;;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20%;
-        height: 600px;
-        }
-
-        header, section, footer {
-            height: 200px;
-            padding: 1em;
-        }
-        a{
-            color: whitesmoke;
-        }
-        li{
-            text-align:left ;
+        nav{
+        background: rgb(189, 61, 61); 
         }
         header{
         background: rgb(220, 52, 52);
         }
-        section{
+        .seccion{
         background: rgb(185, 32, 32);
         }
         footer{
         background: rgb(99, 8, 8);
-        position: fixed;
-        bottom: 0%;
-        left: 0%;
-        width: 100%;
-    
+        }
+        a{
+        color: whitesmoke;
+        }
+        li{
+        text-align:left ;
+        }
+        header, .seccion, footer, nav {
+            padding: 1em;
+        }
+        @media screen and (min-width: 600px){
+            /*aquí inician los estilos de tblet*/
+        nav{
+            float: left;
+            width: 20%;
+            height: 600px;
+        }
+        header, .seccion, footer {
+            height: 200px;
+        }
+        footer{
+            clear: left;
+        }
+        /*aquí terminan los estilos de tablet*/
+        }
+        @media screen and (min-width: 1024px){
+            /*aquí inician los estilos de desktop*/
+            nav{
+        background: rgb(107, 15, 157); 
+        }
+        header{
+        background: rgb(87, 1, 130);
+        }
+        .seccion{
+        background: rgb(159, 50, 227);
+        }
+        footer{
+        background: rgb(162, 53, 241);
+        }
+        /*aquí terminan los estilos de desktop*/
         }
     </style>
 </head>
@@ -66,15 +85,17 @@
             </ul>
         </nav>
 
-        <section>
-            <h2>Primera Sección</h2>
-            <p>Contenido de la primera sección...</p>
-        </section>
+<section>
+    <section class="seccion">
+        <h2>Primera Sección</h2>
+        <p>Contenido de la primera sección...</p>
+    </section>
 
-        <section>
-            <h2>Segunda Sección</h2>
-            <p>Contenido de la segunda sección...</p>
-        </section>
+    <section class="seccion">
+        <h2>Segunda Sección</h2>
+        <p>Contenido de la segunda sección...</p>
+    </section>
+</section>
     </main>
 
     <footer>
