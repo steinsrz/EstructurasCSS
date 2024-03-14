@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estructuras CSS</title>
-    <!--<link rel="stylesheet" href="styles.css">Agrega un archivo CSS si lo necesitas -->
+    <link rel="stylesheet" href="flexboxgrid.css">
     <style>
         body{
          background: hsl(0, 77%, 24%);   
@@ -39,16 +39,6 @@
         @media screen and (min-width: 600px){
             /*aquí inician los estilos de tblet*/
         
-        main {
-            display: flex;
-        }
-        nav{
-            width: 20%;
-
-        }  
-        main > section{
-        flex: 1;
-        }
         header, .seccion, footer {
             height: 200px;
         }
@@ -76,14 +66,15 @@
     </style>
 </head>
 <body>
+    <div class="row">
+        <header class="col-xs-12">
+            <h1 class="box">Encabezado de la Página</h1>
+        </header>
+    </div>
 
-<header>
-    <h1>Encabezado de la Página</h1>
-</header>
-
-    <main>
-        <nav>
-            <ul>
+<main class="row">
+        <nav  class="col-xs-12 col-sm-3 col-lg-2">
+            <ul class="box">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Sobre nosotros</a></li>
                 <li><a href="#">Servicios</a></li>
@@ -91,22 +82,24 @@
             </ul>
         </nav>
 
-<section>
-    <section class="seccion">
-        <h2>Primera Sección</h2>
-        <p>Contenido de la primera sección...</p>
-    </section>
+        <section  class="col-xs-12 col-sm-9 col-lg-10">
+            <section class="seccion box">
+                <h2>Primera Sección</h2>
+                <p>Contenido de la primera sección...</p>
+            </section>
 
-    <section class="seccion">
-        <h2>Segunda Sección</h2>
-        <p>Contenido de la segunda sección...</p>
-    </section>
-</section>
-    </main>
+            <section class="seccion box">
+                <h2>Segunda Sección</h2>
+                <p>Contenido de la segunda sección...</p>
+            </section>
+        </section>
+</main>
 
-    <footer>
-        <p>Pie de página - Información de contacto, derechos de autor, etc.</p>
+<div class="row">
+    <footer class="col-xs-12">
+        <p class="box">Pie de página - Información de contacto, derechos de autor, etc.</p>
     </footer>
+</div>
 
 </body>
 </html>
