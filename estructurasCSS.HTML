@@ -33,24 +33,25 @@
         li{
         text-align:left ;
         }
-        header, .seccion, footer, nav {
+        header, .seccion, footer{
             padding: 1em;
         }
         @media screen and (min-width: 600px){
-            /*aquí inician los estilos de tblet*/
-        
-        main {
-            display: flex;
-        }
+            /*aquí inician los estilos de tablet*/
+            main{
+        display:grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 200px 200px;
+     }
         nav{
-            width: 20%;
-
-        }  
-        main > section{
-        flex: 1;
-        }
-        header, .seccion, footer {
+            grid-row-start:1;
+            grid-row-end:3;
+            }  
+        header, .seccion, footer{
             height: 200px;
+        }
+        .section{
+             height: 168px;
         }
         /*aquí terminan los estilos de tablet*/
         }
@@ -68,9 +69,6 @@
         footer{
         background: rgb(162, 53, 241);
         }
-        main > section{
-        width: 76.4%;
-        }
         /*aquí terminan los estilos de desktop*/
         }
     </style>
@@ -80,7 +78,6 @@
 <header>
     <h1>Encabezado de la Página</h1>
 </header>
-
     <main>
         <nav>
             <ul>
@@ -90,7 +87,6 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-
 <section>
     <section class="seccion">
         <h2>Primera Sección</h2>
@@ -103,7 +99,6 @@
     </section>
 </section>
     </main>
-
     <footer>
         <p>Pie de página - Información de contacto, derechos de autor, etc.</p>
     </footer>
